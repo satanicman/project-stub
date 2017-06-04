@@ -8,7 +8,7 @@ module.exports = {
         { elem: 'css', url: 'index.min.css' }
     ],
     scripts: [{ elem: 'js', url: 'index.min.js' }],
-    mods: { theme: 'media' },
+    mods: { theme: 'base' },
     mix: [
         {block: 'reset'},
         {block: 'normalize'},
@@ -27,12 +27,84 @@ module.exports = {
             mix: {
                 block: 'container'
             },
-            content: {
-                block: 'fa',
-                mods: {
-                    icon: 'check'
+            content: [
+                {
+                    block: 'fa',
+                    mods: {
+                        icon: 'adjust'
+                    }
+                },
+                {
+                    block: 'button',
+                    mods: {
+                        size: 'md',
+                        theme: 'base',
+                        color: 'orange'
+                    },
+                    text: 'test'
+                },
+                {
+                    block: 'button',
+                    mods: {
+                        size: 'md',
+                        theme: 'base',
+                        color: 'blue'
+                    },
+                    text: 'test'
+                },
+                {
+                    block: 'button',
+                    mods: {
+                        size: 'md',
+                        theme: 'base'
+                    },
+                    text: 'test'
+                },
+                {
+                    block: 'headers',
+                    content: [
+                        {
+                            block: 'h',
+                            mods: {
+                                type: '1'
+                            },
+                            content: 'h1'
+                        },
+                        {
+                            block: 'h',
+                            mods: {
+                                type: '2'
+                            },
+                            content: 'h2'
+                        },
+                        {
+                            block: 'h',
+                            mods: {
+                                type: '3'
+                            },
+                            content: 'h3'
+                        },
+                        {
+                            block: 'h',
+                            mods: {
+                                type: '4'
+                            },
+                            content: 'h4'
+                        },
+                        {
+                            block: 'h',
+                            mods: {
+                                type: '5'
+                            },
+                            content: 'h5'
+                        },
+                        {
+                            block: 'text',
+                            content: 'Киевский городской совет утвердил новую концепцию развития наружной рекламы. За это решение проголосовали 85 депутатов, но его еще должен подписать мэр, отмечает MMR. Новые правила предусматривают разделение Киева на пять зон - начиная от нулевой в центре, где наружная реклама практически запрещена.'
+                        }
+                    ]
                 }
-            }
+            ]
         },
         {
             block: 'footer',
