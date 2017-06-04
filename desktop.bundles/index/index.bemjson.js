@@ -11,15 +11,22 @@ module.exports = {
     mods: { theme: 'media' },
     mix: [
         {block: 'reset'},
-        {block: 'normalize'}
+        {block: 'normalize'},
+        {block: 'bootstrap'}
     ],
     content: [
         {
             block: 'header',
+            mix: {
+                block: 'container'
+            },
             content: 'header'
         },
         {
             block: 'content',
+            mix: {
+                block: 'container'
+            },
             content: {
                 block: 'fa',
                 mods: {
@@ -29,6 +36,9 @@ module.exports = {
         },
         {
             block: 'footer',
+            mix: {
+                block: 'container'
+            },
             content: 'footer'
         }
     ]
